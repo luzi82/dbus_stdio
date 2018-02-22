@@ -7,6 +7,7 @@ import argparse
 def signal_handler(message):
     try:
         print(message)
+        sys.stdout.flush()
     except:
         loop.quit()
 
